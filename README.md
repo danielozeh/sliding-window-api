@@ -2,6 +2,9 @@
 
 This project implements a simple API-driven event counter that tracks the number of events in a sliding window (e.g., within the last 5 minutes). The system can handle high-throughput events while maintaining constant memory usage and providing accurate event counts within a specified time window.
 
+In this project, I'm using RabbitMQ as a message broker to distribute the event processing across multiple consumer instances, ensuring scalability and fault tolerance.
+I am using a Shared State Between Producer and Consumer
+
 ## Features
 - Track events in a sliding window (e.g., 5 minutes).
 - Efficient memory usage with a circular buffer.
@@ -31,8 +34,20 @@ Start the server:
 ```
 npm run start
 ```
-
 The server will be running at http://localhost:3000.
+
+Start the consumer (on a different terminal):
+
+```
+npm run consumer
+```
+The consumer will be running at http://localhost:4000.
+
+To test bulk events, run the test_event.js script:
+
+```
+npm run test_event
+```
 
 ### API Endpoints
 
@@ -104,9 +119,7 @@ Use tools like Postman or cURL to test the API.
 npm run start: Starts the Express server.
 ```
 
-#### Further Development - Optional
-- Implement additional endpoints for bulk event ingestion.
-- Integrate with a message broker for distributed event processing.
+#### Further Development
 - Add authentication for securing the API.
 
 #### License
