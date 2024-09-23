@@ -99,7 +99,11 @@ json
 
 ```
 .
-├── app.js        # Main application file containing the API and Sliding Window logic
+├── app.js        # Main application file
+├── consumer.js   # Consumer application file
+├── sliding_window.js   # Sliding window logic
+├── config.js     # Configuration file
+├── test_event.js # Test script
 ├── package.json  # NPM dependencies and scripts
 └── README.md     # Project documentation
 ```
