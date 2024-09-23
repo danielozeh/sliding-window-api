@@ -2,6 +2,8 @@
 
 This project implements a simple API-driven event counter that tracks the number of events in a sliding window (e.g., within the last 5 minutes). The system can handle high-throughput events while maintaining constant memory usage and providing accurate event counts within a specified time window.
 
+Note that the messaging broker used has limitations as it is a free tier.
+
 In this project, I'm using RabbitMQ as a message broker to distribute the event processing across multiple consumer instances, ensuring scalability and fault tolerance.
 I am using a Shared State Between Producer and Consumer
 
