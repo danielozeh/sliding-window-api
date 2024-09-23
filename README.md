@@ -16,8 +16,8 @@ This project implements a simple API-driven event counter that tracks the number
 Clone the repository:
 
 ```
-    git clone https://github.com/danielozeh/sliding-window-api.git
-    cd sliding-window-api
+git clone https://github.com/danielozeh/sliding-window-api.git
+cd sliding-window-api
 ```
 
 Install dependencies:
@@ -104,10 +104,10 @@ Use tools like Postman or cURL to test the API.
 npm run start: Starts the Express server.
 ```
 
-#### Further Development
-Implement additional endpoints for bulk event ingestion.
-Integrate with a message broker for distributed event processing.
-Add authentication for securing the API.
+#### Further Development - Optional
+- Implement additional endpoints for bulk event ingestion.
+- Integrate with a message broker for distributed event processing.
+- Add authentication for securing the API.
 
 #### License
 This project is licensed under the MIT License.
